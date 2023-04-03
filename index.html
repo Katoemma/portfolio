@@ -13,51 +13,53 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body class="gap-0">
+<body class="gap-0 bg-black">
+     <!-- navigation bar-->
+     <nav class="animate__animated animate__bounceInDown animate__slower flex z-20 justify-between p-2 md:px-4 lg:px-6 2xl:pt-6 2xl:px-10" id="navbar" style="position:sticky; top:0px; background: none;">
+        <!--logo-->
+        <div class="p-4 ">
+            <a href="#"><h1 class="text-xl font-bold text-goldy md:text-2xl lg:text-3xl 2xl:text-4xl">kato Emma</h1></a>
+        </div>
+
+        <!--nav links-->
+        <div class="hidden pt-16 gap-4 md:flex md:pt-4 md:gap-6 2xl:pt-6 2xl:gap-10">
+            <a href="#">
+                <li class="text-xl text-white list-none md:text-goldy md:text-2xl 2xl:text-3xl">Home</li>
+            </a>
+            <a href="#">
+                <li class="text-xl text-white list-none hover:text-goldy md:text-2xl 2xl:text-3xl">Projects</li>
+            </a>
+            <a href="#">
+                <li class="text-xl text-white list-none hover:text-goldy md:text-2xl 2xl:text-3xl">About</li>
+            </a>
+            <a href="#">
+                <li class="text-xl text-white list-none hover:text-goldy md:text-2xl 2xl:text-3xl">Contact</li>
+            </a>
+        </div>
+        <!--mobile menu open and close-->
+        <div class="flex pt-4 md:hidden">
+            <img class="h-10" src="img/assets/menu.png" alt="menu icon">
+            <!--close btn-->
+            <img class="hidden" src="img/assets/close.png" alt="close menu icon">
+        </div>
+        <!--lets get started button -->
+        <a class="hidden pt-4 md:block 2xl:pt-6" href="#"><button class="text-white bg-goldy py-2 px-4 rounded-lg 2xl:px-6 2xl:text-xl">Lets start</button></a>
+    </nav>
+     <!--background video-->
+    <div class="hidden absolute z-0 h-screen w-full md:block">
+        <video class="w-full h-screen" autoplay loop>
+            <source src="img/background/earth.mp4" type="video/mp4">
+        </video>
+        <img src="img/hero.png" alt="img" class="absolute right-0 top-1 h-screen opacity-80">
+    </div>
 
     <!--nav and hero page container-->
     <div class="flex flex-col bg-mobileBg bg-cover md:bg-none">
-        <!--background video-->
-        <div class="hidden absolute z-0 h-4/5 w-full md:block">
-            <video class="w-full" autoplay loop>
-                <source src="img/background/earth.mp4" type="video/mp4">
-            </video>
-            <img src="img/hero.png" alt="img" class="absolute right-0 top-1 h-screen opacity-80">
-        </div>
+       
 
         <!--this is purposely for dark bg-->
         <div class="flex flex-col justify-between z-10" style="background-color: rgba(0, 0, 0, 0.5);">
-            <!-- navigation bar-->
-            <nav class="animate__animated animate__bounceInDown animate__slower flex justify-between p-2 md:px-4 lg:px-6 2xl:pt-6 2xl:px-10" id="navbar" style="position:sticky; top:0px;">
-                <!--logo-->
-                <div class="p-4 ">
-                    <a href="#"><h1 class="text-xl font-bold text-goldy md:text-2xl lg:text-3xl 2xl:text-4xl">kato Emma</h1></a>
-                </div>
-
-                <!--nav links-->
-                <div class="hidden pt-16 gap-4 md:flex md:pt-4 md:gap-6 2xl:pt-6 2xl:gap-10">
-                    <a href="#">
-                        <li class="text-xl text-white list-none md:text-goldy md:text-2xl 2xl:text-3xl">Home</li>
-                    </a>
-                    <a href="#">
-                        <li class="text-xl text-white list-none hover:text-goldy md:text-2xl 2xl:text-3xl">Projects</li>
-                    </a>
-                    <a href="#">
-                        <li class="text-xl text-white list-none md:text-2xl 2xl:text-3xl">About</li>
-                    </a>
-                    <a href="#">
-                        <li class="text-xl text-white list-none md:text-2xl 2xl:text-3xl">Contact</li>
-                    </a>
-                </div>
-                <!--mobile menu open and close-->
-                <div class="flex pt-4 md:hidden">
-                    <img class="h-10" src="img/assets/menu.png" alt="menu icon">
-                    <!--close btn-->
-                    <img class="hidden" src="img/assets/close.png" alt="close menu icon">
-                </div>
-                <!--lets get started button -->
-                <a class="hidden pt-4 md:block 2xl:pt-6" href="#"><button class="text-white bg-goldy py-2 px-4 rounded-lg 2xl:px-6 2xl:text-xl">Lets start</button></a>
-            </nav>
+           
             <!--hero page-->
             <div class="animate__animated animate__slower animate__fadeInLeft animate__delay-2s flex flex-col gap-6  h-screen p-2 md:w-6/12 md:gap-8 2xl:gap-24">
                 <!--intro animated text-->
@@ -111,7 +113,7 @@
 
                 <!--card text-->
                 <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
-                    <h1>Good news Real Estates </h1>
+                    <h1>Hear to learn Uganda</h1>
 
                     <!--language buttons container-->
                     <div class="flex gap-2">
@@ -131,7 +133,7 @@
 
                 <!--card text-->
                 <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
-                    <h1>Good news Real Estates </h1>
+                    <h1>Solar calc </h1>
 
                     <!--language buttons container-->
                     <div class="flex gap-2">
@@ -151,7 +153,7 @@
 
                 <!--card text-->
                 <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
-                    <h1>Good news Real Estates </h1>
+                    <h1>Allan Deejay </h1>
 
                     <!--language buttons container-->
                     <div class="flex gap-2">
