@@ -3,7 +3,7 @@
 
 
 //js to automatically type the hero text
-function autoType(element, texts, delay = 100) {
+function autoType(element, texts, delay = 150) {
     let textIndex = 0;
     let charIndex = 0;
     function type() {
@@ -32,5 +32,5 @@ function autoType(element, texts, delay = 100) {
   }
   
   const typedText = document.querySelector("#Ctext");
-  autoType(typedText, ["developer.", "web designer.", "student."]);
+  autoType(typedText, ["a developer.", "a designer.", "Kato Emma"]);
   
