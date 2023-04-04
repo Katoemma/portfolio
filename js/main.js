@@ -1,4 +1,15 @@
-// js to change navbar bg on scroll
+// js functions to trigger the navigation menu in mobile view
+function openNav(){
+  document.getElementById("navList").style.display = "block";
+  document.getElementById("openBtn").style.display = "none";
+  document.getElementById("closeBtn").style.display = "block";
+};
+
+function closeNav(){
+  document.getElementById("navList").style.display = "none";
+  document.getElementById("openBtn").style.display = "block";
+  document.getElementById("closeBtn").style.display = "none";
+}
 
 
 

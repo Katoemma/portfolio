@@ -22,7 +22,7 @@
         </div>
 
         <!--nav links-->
-        <div class="hidden pt-16 gap-4 md:flex md:pt-4 md:gap-6 2xl:pt-6 2xl:gap-10">
+        <div class="hidden pt-16 gap-4 md:flex md:flex-row md:pt-4 md:gap-6 2xl:pt-6 2xl:gap-10" id="navList">
             <a href="#">
                 <li class="text-xl text-white list-none md:text-goldy md:text-2xl 2xl:text-3xl">Home</li>
             </a>
@@ -38,9 +38,9 @@
         </div>
         <!--mobile menu open and close-->
         <div class="flex pt-4 md:hidden">
-            <img class="h-10" src="img/assets/menu.png" alt="menu icon">
+            <img class="h-10" src="img/assets/menu.png" alt="menu icon" id="openBtn" onclick="openNav()">
             <!--close btn-->
-            <img class="hidden" src="img/assets/close.png" alt="close menu icon">
+            <img class="hidden h-10" src="img/assets/close.png" alt="close menu icon" id="closeBtn" onclick="closeNav()">
         </div>
         <!--lets get started button -->
         <a class="hidden pt-4 md:block 2xl:pt-6" href="#"><button class="text-white bg-goldy py-2 px-4 rounded-lg 2xl:px-6 2xl:text-xl">Lets start</button></a>
