@@ -9,9 +9,10 @@ module.exports = {
       '2xl': '1824px'
     },
     colors:{
-      'goldy': '#ff6600',
+      'goldy': '#ff0066',//#ff6600
       'white' : '#ffffff',
       'black' : '#000000',
+      'gray': '#808080',
     },
     extend: {
       backgroundImage: {

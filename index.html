@@ -12,10 +12,12 @@
     <!--animate.css link-->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="gap-0 bg-black">
+<body class="gap-0" style="overflow-x: hidden;">
      <!-- navigation bar-->
-     <nav class="animate__animated animate__bounceInDown animate__slower flex z-20 justify-between p-2 md:px-4 lg:px-6 2xl:pt-6 2xl:px-10" id="navbar" style="position:sticky; top:0px; background: none;">
+     <nav class="animate__animated animate__bounceInDown animate__slower flex z-20 justify-between p-2 bg-black md:px-4 lg:px-6 2xl:pt-6 2xl:px-10" id="navbar" style="position:sticky; top:0px;">
         <!--logo-->
         <div class="p-4 ">
             <a href="#"><h1 class="text-xl font-bold text-goldy md:text-2xl lg:text-3xl 2xl:text-4xl">kato Emma</h1></a>
@@ -46,7 +48,7 @@
         <a class="hidden pt-4 md:block 2xl:pt-6" href="#"><button class="text-white bg-goldy py-2 px-4 rounded-lg 2xl:px-6 2xl:text-xl">Lets start</button></a>
     </nav>
      <!--background video-->
-    <div class="hidden absolute z-0 h-screen w-full md:block">
+    <div class="hidden absolute z-0 h-screen w-full md:block bg-black">
         <video class="w-full h-screen" autoplay loop>
             <source src="img/background/earth.mp4" type="video/mp4">
         </video>
@@ -69,30 +71,38 @@
 
                 <!--introductory paragraph-->
                 <p class="animate__animated animate__slower animate__fadeInLeft animate__delay-4s text-center text-white text-lg md:text-left md:ml-6 md:text-2xl 2xl:text-4xl">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, at architecto facilis et quisquam illo repellendus impedit odit facere unde excepturi iste quia deleniti itaque quis. Exercitationem debitis deleniti culpa?
+                    Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
                 </p>
                 <!--lets get started button-->
                 
                 <a class="self-center md:self-start md:ml-6" href="#"><button class="text-white bg-goldy py-2 px-4 rounded-lg 2xl:px-6 2xl:py-4 2xl:text-xl 2xl:w-60">Lets start</button></a>
+                <!-- font awesome icons container-->
+                <div class="flex  text-3xl justify-between p-4 lg:text-5xl lg:w-96">
+                    <a href="#"><i class="fa fa-twitter text-white hover:text-goldy"></i></a>
+                    <a href="#"><i class="fa fa-facebook text-white hover:text-goldy"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp text-white hover:text-goldy"></i></a>
+                    <a href="#"><i class="fa fa-github text-white hover:text-goldy"></i></a>
+                    <a href="#"><i class="fa fa-instagram text-white hover:text-goldy"></i></a>
+                </div>
             </div>
         </div>
        
     </div>
     <!-- projects container-->
-    <div class="flex flex-col justify-between pt-4">
+    <div class="flex flex-col justify-between pt-4 pb-6">
         <!--projects heading-->
         <div class="text-center pb-6">
-            <h1 class="text-4xl font-bold text-goldy">Projects</h1>
+            <h1 class="text-4xl font-bold text-goldy md:text-5xl lg:text-7xl">Projects</h1>
         </div>
         
         <!--project card container-->
-        <div class="flex flex-col justify-between md:grid ">
+        <div class="flex flex-col justify-between md:grid md:grid-cols-2 md:p-4 md:gap-4 lg:grid-cols-3">
             <!--card 1-->
-            <div class="flex flex-col justify-between">
-                <img src="img/background/smallBG.jpg" alt="project image" class="w-full">
+            <div class="flex flex-col justify-between rounded">
+                <img src="img/background/smallBG.jpg" alt="project image" class="w-full md:rounded-t-2xl">
 
                 <!--card text-->
-                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
+                <div class="flex flex-col px-4 pb-12 py-4 gap-4  text-white bg-black md:rounded-b-2xl">
                     <h1>Good news Real Estates </h1>
 
                     <!--language buttons container-->
@@ -109,10 +119,10 @@
 
             <!--card 2-->
             <div class="flex flex-col justify-between">
-                <img src="img/background/smallBG.jpg" alt="project image" class="w-full">
+                <img src="img/background/smallBG.jpg" alt="project image" class="w-full md:rounded-t-2xl">
 
                 <!--card text-->
-                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
+                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black md:rounded-b-2xl">
                     <h1>Hear to learn Uganda</h1>
 
                     <!--language buttons container-->
@@ -129,10 +139,10 @@
 
             <!--card 3-->
             <div class="flex flex-col justify-between">
-                <img src="img/background/smallBG.jpg" alt="project image" class="w-full">
+                <img src="img/background/smallBG.jpg" alt="project image" class="w-full md:rounded-t-2xl">
 
                 <!--card text-->
-                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
+                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black md:rounded-b-2xl">
                     <h1>Solar calc </h1>
 
                     <!--language buttons container-->
@@ -149,10 +159,10 @@
 
             <!--card 4-->
             <div class="flex flex-col justify-between">
-                <img src="img/background/smallBG.jpg" alt="project image" class="w-full">
+                <img src="img/background/smallBG.jpg" alt="project image" class="w-full md:rounded-t-2xl">
 
                 <!--card text-->
-                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
+                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black md:rounded-b-2xl">
                     <h1>Allan Deejay </h1>
 
                     <!--language buttons container-->
@@ -169,10 +179,10 @@
 
             <!--card 5-->
             <div class="flex flex-col justify-between">
-                <img src="img/background/smallBG.jpg" alt="project image" class="w-full">
+                <img src="img/background/smallBG.jpg" alt="project image" class="w-full md:rounded-t-2xl">
 
                 <!--card text-->
-                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
+                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black md:rounded-b-2xl">
                     <h1>Good news Real Estates </h1>
 
                     <!--language buttons container-->
@@ -189,10 +199,10 @@
 
             <!--card 6-->
             <div class="flex flex-col justify-between">
-                <img src="img/background/smallBG.jpg" alt="project image" class="w-full">
+                <img src="img/background/smallBG.jpg" alt="project image" class="w-full md:rounded-t-2xl">
 
                 <!--card text-->
-                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black">
+                <div class="flex flex-col px-4 pb-12 py-4 gap-4 text-white bg-black md:rounded-b-2xl">
                     <h1>Good news Real Estates </h1>
 
                     <!--language buttons container-->
@@ -206,6 +216,24 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+    <!--end of projects container-->
+
+    <!--About me container-->
+    <div class="flex flex-col text-white py-20 px-3 bg-black gap-8 lg:py-32" style="background: rgb(5,5,5);
+    background: linear-gradient(90deg, rgba(5,5,5,1) 17%, rgba(121,9,94,1) 60%, rgba(9,9,9,1) 100%);">
+        <!--about me heading text-->
+        <div class="text-goldy">
+            <h1 class="text-5xl font-bold lg:text-6xl xl:text-7xl">About me</h1>
+        </div>
+        <!--about me paragraph text-->
+        <div class="md:w-2/6">
+            <p class="text-xl">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        </div>
+        <!--resume button-->
+        <div class="py-4">
+            <a href="#"><button class="px-6 py-2 bg-goldy text-xl rounded-lg">My Resume</button></a>
         </div>
     </div>
    
